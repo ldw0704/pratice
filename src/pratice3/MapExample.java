@@ -20,14 +20,10 @@ public class MapExample {
 		Set<String> keySet = map.keySet();		
 		for (String key : keySet) { //확장for문 알아두기. 타입 변수명 : 배열/컬렉션명 - 0번부터 순서대로돌아감.
 			totalScore += map.get(key);
-		}
-
-		for (String key : keySet) {
 			if (maxScore < map.get(key)) {
 				maxScore = map.get(key);
 				name = key;
 			}
-
 		}
 
 		System.out.println();
